@@ -15,5 +15,4 @@ public class HomePage extends SeleniumBase{
 		
 		return new MyHomePage();
 	}
-
 }

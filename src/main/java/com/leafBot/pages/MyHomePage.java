@@ -3,6 +3,7 @@ package com.leafBot.pages;
 import com.leafBot.selenium.api.base.SeleniumBase;
 
 
+
 public class MyHomePage extends SeleniumBase {
 	
 	public MyLeadsPage clickLeads() {
@@ -10,5 +11,6 @@ public class MyHomePage extends SeleniumBase {
 		
 		return new MyLeadsPage();
 	}
+
 
 }

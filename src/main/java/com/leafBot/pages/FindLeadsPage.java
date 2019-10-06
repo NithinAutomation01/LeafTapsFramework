@@ -61,17 +61,16 @@ public class FindLeadsPage extends SeleniumBase{
 	}
 
 	public ViewLeadsPage clickFirstLeadRecord() {
-		click(locateElement("xpath", "(//td[contains(@class,'td-partyId x-grid3-cell-first ')]//a)[1]"));
+		click(locateElement("xpath", "(//a[text()='Vediraj'])[1]"));
 		
 		return new ViewLeadsPage();
 
 	}
 	public ViewLeadsPage clickFLeadRecord() throws InterruptedException {
 		Thread.sleep(2000);
-		valueFirstrow = getElementText(locateElement("xpath", "(//div[contains(@class,'x-grid3-cell-inner x-grid3-col-partyId')]/a)[1]"));
+		 valueFirstrow = getElementText(locateElement("xpath", "//div[contains(@class,'x-grid3-cell-inner x-grid3-col-partyId')]/a"));
 		System.out.println(valueFirstrow);
-		
-		 click(locateElement("xpath", "(//div[contains(@class,'x-grid3-cell-inner x-grid3-col-partyId')]/a)[1]"));
+		 click(locateElement("xpath", "//div[contains(@class,'x-grid3-cell-inner x-grid3-col-partyId')]/a"));
 
 	return new ViewLeadsPage();
 	}
